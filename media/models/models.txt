@@ -1,0 +1,1 @@
+Used for 3d models of weapons, vehicles etc.

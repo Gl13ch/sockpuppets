@@ -1,0 +1,1 @@
+This folder contains text files with item, vehicles and recipe definitions. See the section on Scripts for more information.
