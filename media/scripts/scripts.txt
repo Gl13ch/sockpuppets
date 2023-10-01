@@ -11,6 +11,55 @@ id=MyFirst
 description=Basic example mod
 url="https://theindiestone.com/forums/",
 
+//SOCKS AND GLOVER REF----------
+item Socks_Ankle
+{
+    DisplayCategory = Clothing,
+    Type = Clothing,
+    DisplayName = Socks,
+    ClothingItem = Socks_Ankle,
+    BodyLocation = Socks,
+    Icon = SocksAnkleWhite,
+    BloodLocation = Shoes,
+    Insulation = 0.15,
+    WindResistance = 0.1,
+    Weight = 0.1,
+    FabricType = Cotton,
+    WorldStaticModel = Sock_Ankle_Ground,
+}
+
+item Socks_Long
+{
+    DisplayCategory = Clothing,
+    Type = Clothing,
+    DisplayName = Long Socks,
+    ClothingItem = Socks_Long,
+    BodyLocation = Socks,
+    Icon = SocksWhite,
+    BloodLocation = Shoes;LowerLegs,
+    Insulation = 0.55,
+    WindResistance = 0.65,
+    Weight = 0.1,
+    FabricType = Cotton,
+    WorldStaticModel = Socks_Long_Ground,
+}
+
+item Gloves_LongWomenGloves
+{
+    DisplayCategory = Accessory,
+    Type = Clothing,
+    DisplayName = Long Gloves,
+    ClothingItem = Gloves_LongWomenGloves,
+    BodyLocation = Hands,
+    BloodLocation = Hands,
+    Icon = GlovesLongBlack,
+    Weight = 0.1,
+    Insulation = 0.5,
+    WindResistance = 0.5,
+    FabricType = Cotton,
+    WorldStaticModel = GlovesLong_Ground,
+}
+
 //MODULE BASED-------------------------------------------------------------
 /*
 module MyMod {

@@ -1,0 +1,49 @@
+module sockPuppets 
+{
+    item Sock_Puppet_1
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sock Puppet,
+        ClothingItem = Socks_Long,
+        BodyLocation = HandsLeft,
+        Icon = ,
+        BloodLocation = HandsLeft; ,
+        Insulation = 0.55,
+        WindResistance = 0.65,
+        Weight = 0.1,
+        FabricType = Cotton,
+        WorldStaticModel = ,
+    }
+    item Sock_Puppet_2
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sock Puppet,
+        ClothingItem = Socks_Long,
+        BodyLocation = HandsLeft,
+        Icon = ,
+        BloodLocation = HandsLeft; ,
+        Insulation = 0.55,
+        WindResistance = 0.65,
+        Weight = 0.1,
+        FabricType = Cotton,
+        WorldStaticModel = ,
+    }
+    item Sock_Puppet_3
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sock Puppet,
+        ClothingItem = Socks_Long,
+        BodyLocation = HandsLeft,
+        Icon = ,
+        BloodLocation = HandsLeft; ,
+        Insulation = 0.55,
+        WindResistance = 0.65,
+        Weight = 0.1,
+        FabricType = Cotton,
+        WorldStaticModel = ,
+    }
+}
+
