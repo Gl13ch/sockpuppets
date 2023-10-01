@@ -5,10 +5,14 @@
 
 
 
-------------------------------------------------------
+----------------------------------------------------------
 --separate first into puppet type, then into dialogue type
 
 -- madge --
+
+--local madgeFirstTimeEquipped = {}
+--This needs to be remembered on first time vs re-equipping
+
 local madgeAttackList = {
 
 }
@@ -29,6 +33,10 @@ local madgeDeathList = {
 
 
 -- sadge --
+
+--local sadgeFirstTimeEquipped = {
+--    "..."
+--}
 
 local sadgeAttackList = {
     "Oh bother...",
@@ -76,7 +84,7 @@ local kookyHurtList = {
 }
 
 local kookyOtherList = {
-    
+    "AAAAAAAA",
     
 }
 

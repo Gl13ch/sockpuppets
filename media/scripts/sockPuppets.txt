@@ -1,6 +1,6 @@
 module sockPuppets 
 {
-    item Sock_Puppet_1
+    item Sock_Puppet_Sadge
     {
         DisplayCategory = Clothing,
         Type = Clothing,
@@ -15,7 +15,7 @@ module sockPuppets
         FabricType = Cotton,
         WorldStaticModel = ,
     }
-    item Sock_Puppet_2
+    item Sock_Puppet_Madge
     {
         DisplayCategory = Clothing,
         Type = Clothing,
@@ -30,7 +30,7 @@ module sockPuppets
         FabricType = Cotton,
         WorldStaticModel = ,
     }
-    item Sock_Puppet_3
+    item Sock_Puppet_Kooky
     {
         DisplayCategory = Clothing,
         Type = Clothing,
