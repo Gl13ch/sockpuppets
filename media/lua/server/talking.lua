@@ -10,6 +10,7 @@
 
 -- madge --
 
+--Idea?
 --local madgeFirstTimeEquipped = {}
 --This needs to be remembered on first time vs re-equipping
 

@@ -1,3 +1,7 @@
+TO RUN LUA ON GITBASH: winpty lua test.lua
+
+--REPAIRING CLOTHING IS BASED ON IF GIVEN FABRIC:TYPE....in theory should be done automatically.
+
 If do this way...At what point does sock puppets personality change,
 character development but sock puppet.
 
@@ -37,7 +41,7 @@ scissors
 Scotchtape/DuctTape
 
 ITEMS TO BE POSSIBLEY USED IN RECIPES
-• belt? RubberBand? ToiletPaper? Earrings? Jewlery? HairDye?
+• belt? RubberBand? ToiletPaper? Earrings? Jewlery? HairDye? HolePuncher? Paperclips? Staples? Stapler?
 • RippedSheets//LeatherStrips/DenimStrips/Mop/Yarn (all strips have dirt counter part) for hair/facial hair...also require scissors for recipe
 • Paints/Pens/Buttons for face designs
 

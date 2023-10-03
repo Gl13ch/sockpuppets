@@ -4,7 +4,7 @@ module sockPuppets
     {
         DisplayCategory = Clothing,
         Type = Clothing,
-        DisplayName = Sock Puppet,
+        DisplayName = Sock Puppet S,
         ClothingItem = Socks_Long,
         BodyLocation = HandsLeft,
         Icon = ,
@@ -15,11 +15,12 @@ module sockPuppets
         FabricType = Cotton,
         WorldStaticModel = ,
     }
+
     item Sock_Puppet_Madge
     {
         DisplayCategory = Clothing,
         Type = Clothing,
-        DisplayName = Sock Puppet,
+        DisplayName = Sock Puppet M,
         ClothingItem = Socks_Long,
         BodyLocation = HandsLeft,
         Icon = ,
@@ -30,11 +31,12 @@ module sockPuppets
         FabricType = Cotton,
         WorldStaticModel = ,
     }
+
     item Sock_Puppet_Kooky
     {
         DisplayCategory = Clothing,
         Type = Clothing,
-        DisplayName = Sock Puppet,
+        DisplayName = Sock Puppet K,
         ClothingItem = Socks_Long,
         BodyLocation = HandsLeft,
         Icon = ,

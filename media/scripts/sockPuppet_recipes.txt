@@ -1,16 +1,18 @@
-module sockPuppets 
+module sockPuppets
 {
-    recipe Sock_Puppet_Sadge
+    recipe Sock_Puppet
     {
-        Socks_Ankle/Socks_Long
-    }
-    recipe Sock_Puppet_Madge
-    {
-        
-    }
-    recipe Sock_Puppet_Kooky
-    {
-        
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=1,
+        Socks_Ankle/Socks_Long,
+
+        Result:SockPuppet,
+        Time:100.0,
+        Category: Tailoring,
+        OnGiveXP:Recipe.OnGiveXP.TailoringXp5,
+        OnCreate:Recipe.OnCreate.GiveRandomPuppet,
+        AnimNode:RipSheets,
+        Sound:ClothesRipping,
     }
 }
 
