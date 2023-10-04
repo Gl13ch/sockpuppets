@@ -1,19 +1,21 @@
 module sockPuppets 
 {
+    imports {Base}
+
     item Sock_Puppet_Sadge
     {
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Sock Puppet S,
-        ClothingItem = Socks_Long,
+        ClothingItem = Sock_Puppet_Sadge,
         BodyLocation = HandsLeft,
-        Icon = ,
-        BloodLocation = HandsLeft; ,
+        Icon = SockPuppetSadge,
+        BloodLocation = HandsLeft,
         Insulation = 0.55,
         WindResistance = 0.65,
         Weight = 0.1,
         FabricType = Cotton,
-        WorldStaticModel = ,
+        /** WorldStaticModel = Socks_Long_Ground, **/
     }
 
     item Sock_Puppet_Madge
@@ -21,15 +23,14 @@ module sockPuppets
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Sock Puppet M,
-        ClothingItem = Socks_Long,
+        ClothingItem = Sock_Puppet_Madge,
         BodyLocation = HandsLeft,
-        Icon = ,
-        BloodLocation = HandsLeft; ,
+        Icon = SockPuppetMadge,
+        BloodLocation = HandsLeft,
         Insulation = 0.55,
         WindResistance = 0.65,
         Weight = 0.1,
         FabricType = Cotton,
-        WorldStaticModel = ,
     }
 
     item Sock_Puppet_Kooky
@@ -37,15 +38,14 @@ module sockPuppets
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Sock Puppet K,
-        ClothingItem = Socks_Long,
+        ClothingItem = Sock_Puppet_Kooky,
         BodyLocation = HandsLeft,
-        Icon = ,
-        BloodLocation = HandsLeft; ,
+        Icon = SockPuppetKooky,
+        BloodLocation = HandsLeft,
         Insulation = 0.55,
         WindResistance = 0.65,
         Weight = 0.1,
         FabricType = Cotton,
-        WorldStaticModel = ,
     }
 }
 

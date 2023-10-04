@@ -1,3 +1,0 @@
-The actual content of your mod will be placed in subfolders of the media folder
-
-media/scripts/

@@ -1,1 +1,0 @@
-Icons, 3d model textures and the like go in here, in .png format. Pay attention to the naming scheme: Item icons should use the Item_ prefix.

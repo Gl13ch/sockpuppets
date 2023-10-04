@@ -1,4 +1,0 @@
-Used for server-side scripts. Item spawning, core farming, weather and other server-side events. These only get loaded when the game is actually started (loading a save, starting a server, etc).
-
-
-scripts logic
