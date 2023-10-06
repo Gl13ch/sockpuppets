@@ -10,10 +10,6 @@ function Recipe.OnCreate.GiveRandomPuppet(items, result, player, selectedItem)
     end
 end
 
-function Recipe.OnGiveXP.TailoringXp5(recipe, ingredients, result, player)
-    player:getXp():AddXp(Perks.Tailoring, 3);
-end
-
--- keep [Recipe.GetItemTypes.SewingNeedle]
+-- keep [Recipe.GetItemTypes.SewingNeedle] ...Think this happens on import{Base}
 
 --Used for server-side scripts. Item spawning, core farming, weather and other server-side events. These only get loaded when the game is actually started (loading a save, starting a server, etc).

@@ -1,6 +1,8 @@
 module sockPuppets
 {
-    recipe Sock_Puppet
+    imports {Base}
+
+    recipe Make Sock Puppet
     {
         keep [Recipe.GetItemTypes.SewingNeedle],
         Thread=1,
@@ -9,7 +11,6 @@ module sockPuppets
         Result:SockPuppet,
         Time:100.0,
         Category: Tailoring,
-        OnGiveXP:Recipe.OnGiveXP.TailoringXp5,
         OnCreate:Recipe.OnCreate.GiveRandomPuppet,
         AnimNode:RipSheets,
         Sound:ClothesRipping,
