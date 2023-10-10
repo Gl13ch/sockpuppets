@@ -4,7 +4,7 @@
 	<m_FemaleModel></m_FemaleModel>
 	<m_GUID>0d6777bd-aed1-4179-9309-4608fa4a933a</m_GUID>
 	<m_Static>false</m_Static>
-	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AllowRandomTint>true</m_AllowRandomTint>
 	<m_AttachBone></m_AttachBone>
-	<m_BaseTextures>media\textures\clothes\tempsockpuppet</m_BaseTextures>
+	<m_BaseTextures>clothes\sockpuppet\TempPuppet3</m_BaseTextures>
 </clothingItem>
