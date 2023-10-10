@@ -1,12 +1,15 @@
-<files>
-	<path>media/clothing/Sock_Puppet_Kooky.xml</path>
-	<guid>fae9ab18-d450-4623-b2fa-eb8c0b10ea1a</guid>
-</files>
-<files>
-	<path>media/clothing/Sock_Puppet_Madge.xml</path>
-	<guid>3b9cd08d-7547-4f6b-9d0a-8668d7b6c9ea</guid>
-</files>
-<files>
-	<path>media/clothing/Sock_Puppet_Sadge.xml</path>
-	<guid>0d6777bd-aed1-4179-9309-4608fa4a933a</guid>
-</files>
+<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+	<files>
+		<path>media/clothing/Sock_Puppet_Kooky.xml</path>
+		<guid>fae9ab18-d450-4623-b2fa-eb8c0b10ea1a</guid>
+	</files>
+	<files>
+		<path>media/clothing/Sock_Puppet_Madge.xml</path>
+		<guid>3b9cd08d-7547-4f6b-9d0a-8668d7b6c9ea</guid>
+	</files>
+	<files>
+		<path>media/clothing/Sock_Puppet_Sadge.xml</path>
+		<guid>0d6777bd-aed1-4179-9309-4608fa4a933a</guid>
+	</files>
+</fileGuidTable>

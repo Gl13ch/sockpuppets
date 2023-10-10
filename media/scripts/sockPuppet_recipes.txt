@@ -1,6 +1,6 @@
-module sockPuppets
+module SockPuppets
 {
-    imports {Base}
+   imports {Base}
 
     recipe Make Sock Puppet
     {
@@ -8,10 +8,11 @@ module sockPuppets
         Thread=1,
         Socks_Ankle/Socks_Long,
 
-        Result:SockPuppet,
+        Result: Socks_Ankle,
         Time:100.0,
         Category: Tailoring,
         OnCreate:Recipe.OnCreate.GiveRandomPuppet,
+        OnGiveXP:Recipe.OnGiveXP.GGTailoring5,
         AnimNode:RipSheets,
         Sound:ClothesRipping,
     }
