@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fileGuidTable>
 	<files>
-		<path>media/clothing/Sock_Puppet_Kooky.xml</path>
-		<guid>fae9ab18-d450-4623-b2fa-eb8c0b10ea1a</guid>
+		<path>media/clothing/clothingItems/GG_Sock_Puppet_Kooky.xml</path>
+		<guid>b74b400d-10a2-441b-9777-a74c3dc89a70</guid>
 	</files>
 	<files>
-		<path>media/clothing/Sock_Puppet_Madge.xml</path>
+		<path>media/clothing/clothingItems/GG_Sock_Puppet_Madge.xml</path>
 		<guid>3b9cd08d-7547-4f6b-9d0a-8668d7b6c9ea</guid>
 	</files>
 	<files>
-		<path>media/clothing/Sock_Puppet_Sadge.xml</path>
+		<path>media/clothing/clothingItems/GG_Sock_Puppet_Sadge.xml</path>
 		<guid>0d6777bd-aed1-4179-9309-4608fa4a933a</guid>
 	</files>
 </fileGuidTable>

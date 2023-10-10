@@ -1,13 +1,11 @@
-module SockPuppets 
-{
+module SockPuppets {
     imports {Base}
-
     item Sock_Puppet_Kooky
     {
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Sock Puppet K, /** How it will appear in game **/
-        ClothingItem = Sock_Puppet_Kooky, /** XML FILE **/
+        ClothingItem = GG_Sock_Puppet_Kooky, /** XML FILE **/
         Icon = SockPuppetKooky, /** Item_asdf.png in textures file **/
         BodyLocation = HandsLeft,
         BloodLocation = Hands, /** Blood Location is also protection location **/
@@ -15,6 +13,8 @@ module SockPuppets
         WindResistance = 0.65,
         Weight = 0.1,
         FabricType = Cotton,
+        BiteDefense = 100,
+        ScratchDefense = 100,
     }
 
     item Sock_Puppet_Madge
@@ -22,7 +22,7 @@ module SockPuppets
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Sock Puppet M,
-        ClothingItem = Sock_Puppet_Madge,
+        ClothingItem = GG_Sock_Puppet_Madge,
         Icon = SockPuppetMadge,
         BodyLocation = HandsLeft,
         BloodLocation = Hands,
@@ -30,6 +30,8 @@ module SockPuppets
         WindResistance = 0.65,
         Weight = 0.1,
         FabricType = Cotton,
+        BiteDefense = 100,
+        ScratchDefense = 100,
     }
 
     item Sock_Puppet_Sadge
@@ -37,7 +39,7 @@ module SockPuppets
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Sock Puppet S,
-        ClothingItem = Sock_Puppet_Sadge,
+        ClothingItem = GG_Sock_Puppet_Sadge,
         Icon = SockPuppetSadge,
         BodyLocation = HandsLeft,
         BloodLocation = Hands,
@@ -45,6 +47,8 @@ module SockPuppets
         WindResistance = 0.65,
         Weight = 0.1,
         FabricType = Cotton,
+        BiteDefense = 100,
+        ScratchDefense = 100,
     }
 }
 

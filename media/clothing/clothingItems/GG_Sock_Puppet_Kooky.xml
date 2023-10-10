@@ -2,9 +2,9 @@
 <clothingItem>
 	<m_MaleModel></m_MaleModel>
 	<m_FemaleModel></m_FemaleModel>
-	<m_GUID>fae9ab18-d450-4623-b2fa-eb8c0b10ea1a</m_GUID>
+	<m_GUID>b74b400d-10a2-441b-9777-a74c3dc89a70</m_GUID>
 	<m_Static>false</m_Static>
 	<m_AllowRandomTint>true</m_AllowRandomTint>
 	<m_AttachBone></m_AttachBone>
-	<m_BaseTextures>clothes\sockpuppet\TempPuppet</m_BaseTextures>
+	<m_BaseTextures>clothes\SockPuppets\Test_Sock_Puppet</m_BaseTextures>
 </clothingItem>
