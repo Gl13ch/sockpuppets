@@ -1,7 +1,14 @@
 require "timer"
+require "talking"
 require "enums"
 
-local objectData = {}
+objectData = {}
+objectData.State = OTHER
+
+local function initPlayerData(player)
+    objectData[player] = {}
+    objectData[player].talkTimer 
+end
 
 --local function initZombieData(zombie)
 --    objectData[zombie] = {}
@@ -18,3 +25,11 @@ local function getRandomLine(lines)
 
 end
 
+local function GetLinesFromState(puppetId, stateId)
+    return lineDB.puppetId.stateId
+end
+
+local function OnPlayerUpdate(player)
+
+end
+Events.onPlayerUpdate.Add(OnPlayerUpdate)
