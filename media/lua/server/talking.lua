@@ -58,14 +58,14 @@ local madgeAttackList = {
     "I'm gonna turn you into paste",
     
 }
-madgeAttackLines = { puppetLines:new(" ", madgeAttackList) }
+madgeAttackLines = puppetLines:new(" ", madgeAttackList)
 
 local madgeHurtList = {
     "Fuck, piece of shit.",
     "OW",
 
 }
-madgeHurtLines = { puppetLines:new(" ", madgeHurtList) }
+madgeHurtLines = puppetLines:new(" ", madgeHurtList)
 
 local madgeOtherList = {
     "Can we kill now?",
@@ -73,13 +73,13 @@ local madgeOtherList = {
     "Lemme at em."
 
 }
-madgeOtherLines = { puppetLines:new(" ", madgeOtherList) }
+madgeOtherLines = puppetLines:new(" ", madgeOtherList)
 
 local madgeDeathList = {
     "Fuck this shit.",
 
 }
-madgeDeathLines = { puppetLines:new(" ", madgeDeathList) }
+madgeDeathLines = puppetLines:new(" ", madgeDeathList)
 
 lineDB.MADGE.ATTACK = madgeAttackLines
 lineDB.MADGE.HURT = madgeHurtLines
@@ -96,7 +96,7 @@ local sadgeAttackList = {
     "Oh bother...",
     "Are we done with all this yet?",
 }
-sadgeAttackLines = { puppetLines:new(" ", sadgeAttackList) }
+sadgeAttackLines = puppetLines:new(" ", sadgeAttackList)
 
 
 local sadgeHurtList = {
@@ -105,14 +105,14 @@ local sadgeHurtList = {
     "It hurts :(",
 
 }
-sadgeHurtLines = { puppetLines:new(" ", sadgeHurtList) }
+sadgeHurtLines = puppetLines:new(" ", sadgeHurtList)
 
 
 local sadgeOtherList = {
     "I want to lay down.",
     "I want to go home.",
 }
-sadgeOtherLines = { puppetLines:new(" ", sadgeOtherList) }
+sadgeOtherLines = puppetLines:new(" ", sadgeOtherList)
 
 
 local sadgeDeathList = {
@@ -120,7 +120,7 @@ local sadgeDeathList = {
     "Time for a deep sleep.",
     "Finally.",
 }
-sadgeDeathLines = { puppetLines:new(" ", sadgeDeathList) }
+sadgeDeathLines = puppetLines:new(" ", sadgeDeathList)
 
 lineDB.SADGE.ATTACK = sadgeAttackLines
 lineDB.SADGE.HURT = sadgeHurtLines
@@ -135,24 +135,24 @@ local kookyAttackList = {
     "YAAAaaaY",
 
 }
-kookyAttackLines = {puppetLines:new(" ",kookyAttackList) }
+kookyAttackLines = puppetLines:new(" ",kookyAttackList)
 
 local kookyHurtList = {
     "HAaAHAHAa",
     "OuCHIE, AHAHAHA",
 
 }
-kookyHurtLines = {puppetLines:new(" ",kookyHurtList) }
+kookyHurtLines = puppetLines:new(" ",kookyHurtList)
 
 local kookyOtherList = {
     "AAAAAAAAA"
 }
-kookyOtherLines = {puppetLines:new(" ",kookyOtherList) }
+kookyOtherLines = puppetLines:new(" ",kookyOtherList)
 
 local kookyDeathList = {
     "HaaHAAa OW",
 }
-kookyDeathLines = {puppetLines:new(" ",kookyDeathList) }
+kookyDeathLines = puppetLines:new(" ",kookyDeathList)
 
 lineDB.KOOKY.ATTACK = kookyAttackLines
 lineDB.KOOKY.HURT = kookyHurtLines
