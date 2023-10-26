@@ -42,6 +42,11 @@ local function OnClothingUpdated(playerOrCharacter) --there's a chance that this
     --    if item:isEquipped() then
     --    end
     --end
+
+    if ~playerOrCharacter:playerIsSelf() then
+        return 0
+    end
+
     local hands = playerOrCharacter:getInventory():getClothingItem_Hands()
 
     if hands:getModule() == ModuleName then
@@ -55,7 +60,6 @@ local function OnPlayerUpdate(player)
     --if objectData[player] == nil then
     --    initPlayerData(player)
     --end
-    
     local playerData = objectData[player]
     local talkTime = playerData.talkTimer:tick()
 
