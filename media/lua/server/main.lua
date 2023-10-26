@@ -65,6 +65,7 @@ local function OnPlayerUpdate(player)
 
     if talkTime and playerData.puppetId ~= nil then
         local line = getRandomLine(GetLinesFromState(playerData.puppetId,OTHER))    --on player update would always be other? trigger for attack, hurt and death would be from other events.
+        player:addLineChatElement(line:getLine())
     end
     --print line to screen here
     --also trigger sound
@@ -79,6 +80,7 @@ local function OnPlayerDeath(player)
     local playerData = objectData[player]
     if playerData.puppetId ~= nil then
         local line = getRandomLine(GetLinesFromState(playerData.puppetId,DEATH))    --on player update would always be other? trigger for attack, hurt and death would be from other events.
+        player:addLineChatElement(line:getLine())
     end
     --print line to screen here
     --also trigger sound
@@ -94,6 +96,7 @@ local function OnWeaponHitXP(player, handWeapon, character, damageSplit)
 
     if talkTime and playerData.puppetId ~= nil then
         local line = getRandomLine(GetLinesFromState(playerData.puppetId,ATTACK))    --on player update would always be other? trigger for attack, hurt and death would be from other events.
+        player:addLineChatElement(line:getLine())
     end
     --print line to screen here
     --also trigger sound
@@ -111,6 +114,7 @@ local function OnPlayerGetDamage(player, damageType, damage)
 
     if talkTime and playerData.puppetId ~= nil then
         local line = getRandomLine(GetLinesFromState(playerData.puppetId,HURT))    --on player update would always be other? trigger for attack, hurt and death would be from other events.
+        player:addLineChatElement(line:getLine())
     end
 end
 
