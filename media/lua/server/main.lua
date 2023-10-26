@@ -10,7 +10,10 @@ objectData.State = OTHER
 
 local function initPlayerData(player)
     objectData[player] = {}
-    objectData[player].talkTimer = Timer:new(ZombRandFloat(SandboxVars.SockPuppets.MinTalkTimer,SandboxVars.SockPuppets.MaxTalkTimer), false)
+        --talkTimer 1 is for other, timer2 would be a shorter timer for things like attacks and taking damage. 
+    objectData[player].talkTimer = Timer:new(ZombRandFloat(SandboxVars.SockPuppets.MinTalkTimer*2,SandboxVars.SockPuppets.MaxTalkTimer*2), false)
+    objectData[player].talkTimer2 = Timer:new(ZombRandFloat(SandboxVars.SockPuppets.MinTalkTimer,SandboxVars.SockPuppets.MaxTalkTimer), false)
+    
     objectData[player].puppetId = nil
 end
 
@@ -27,7 +30,7 @@ local function GetLinesFromState(puppetId, stateId)
     return lineDB.puppetId.stateId
 end
 
-local function onClothingUpdated(playerOrCharacter) --there's a chance that this isn't great. if a character is a zombied than this would check every 
+local function OnClothingUpdated(playerOrCharacter) --there's a chance that this isn't great. if a character is a zombied than this would check every 
     --getClothingItem_Hands --maybe???
     --getWornItems      --contender
     --getClothingItemName
@@ -39,26 +42,72 @@ local function onClothingUpdated(playerOrCharacter) --there's a chance that this
     --    if item:isEquipped() then
     --    end
     --end
-    local hands = playerOrCharacter.getInventory():getClothingItem_Hands()
+    local hands = playerOrCharacter:getInventory():getClothingItem_Hands()
 
     if hands:getModule() == ModuleName then
         --a puppet is equipped
         objectData[playerOrCharacter].puppetId = hands:getName()
     end
 end
-Event.onClothingUpdated.Add(onClothingUpdated)
+Event.OnClothingUpdated.Add(OnClothingUpdated)
 
 local function OnPlayerUpdate(player)
-    if objectData[player] == nil then
-        initPlayerData(player)
-    end
+    --if objectData[player] == nil then
+    --    initPlayerData(player)
+    --end
     
     local playerData = objectData[player]
     local talkTime = playerData.talkTimer:tick()
 
-    if talkTime then
+    if talkTime and playerData.puppetId ~= nil then
         local line = getRandomLine(GetLinesFromState(playerData.puppetId,OTHER))    --on player update would always be other? trigger for attack, hurt and death would be from other events.
     end
+    --print line to screen here
+    --also trigger sound
 end
-Events.onPlayerUpdate.Add(OnPlayerUpdate)
+Events.OnPlayerUpdate.Add(OnPlayerUpdate)
 
+
+local function OnPlayerDeath(player)
+    --if objectData[player] == nil then
+    --    initPlayerData(player)
+    --end
+    local playerData = objectData[player]
+    if playerData.puppetId ~= nil then
+        local line = getRandomLine(GetLinesFromState(playerData.puppetId,DEATH))    --on player update would always be other? trigger for attack, hurt and death would be from other events.
+    end
+    --print line to screen here
+    --also trigger sound
+end
+Events.OnPlayerDeath.Add(OnPlayerDeath)
+
+--check if onweaponhitcharacter triggers on zombies hitting player
+    --OnHitZombie works, probably better than 
+local function OnWeaponHitXP(player, handWeapon, character, damageSplit)
+
+    local playerData = objectData[player]
+    local talkTime = playerData.talkTimer2:tick()
+
+    if talkTime and playerData.puppetId ~= nil then
+        local line = getRandomLine(GetLinesFromState(playerData.puppetId,ATTACK))    --on player update would always be other? trigger for attack, hurt and death would be from other events.
+    end
+    --print line to screen here
+    --also trigger sound
+end
+Events.OnWeaponHitXP.Add(OnWeaponHitXP)
+--OnPlayerGetDamage
+--local function OnWeaponHitCharacter(wielder, character, handWeapon, damage)
+local function OnPlayerGetDamage(player, damageType, damage)
+    if objectData[player] == nil or (damageType ~= "WEAPONHIT" and damageType ~= "FALLDOWN" and damageType ~= "FIRE" and damageType ~= "CARHITDAMAGE" and damageType ~= "CARCRASHDAMAGE")  then --specifies damage types that can trigger the puppet talking
+        return 0
+    end
+
+    local playerData = objectData[player]
+    local talkTime = playerData.talkTimer2:tick()
+
+    if talkTime and playerData.puppetId ~= nil then
+        local line = getRandomLine(GetLinesFromState(playerData.puppetId,HURT))    --on player update would always be other? trigger for attack, hurt and death would be from other events.
+    end
+end
+
+Events.OnPlayerGetDamage.Add(OnPlayerGetDamage)

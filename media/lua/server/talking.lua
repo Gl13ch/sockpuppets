@@ -20,7 +20,7 @@ puppetLines.__index = puppetLines
 function puppetLines:new(line,...)
     obj = {}
     obj.line = line
-    obj.args = {...}
+    obj.args = ...  --testing without table, .. should be table unless i'm missing something
     obj.argsNum = select("#", ...)
     obj.lineCount = obj.argsNum
     setmetatable(obj, self)
