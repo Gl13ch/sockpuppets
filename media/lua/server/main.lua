@@ -47,7 +47,7 @@ local function OnClothingUpdated(playerOrCharacter) --there's a chance that this
         return 0
     end
 
-    local hands = playerOrCharacter:getInventory():getClothingItem_Hands()
+    local hands = playerOrCharacter:getClothingItem_Hands()
 
     if hands:getModule() == ModuleName then
         --a puppet is equipped
