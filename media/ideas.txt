@@ -1,9 +1,25 @@
 /** 
+FROM SCRAP ARMOR
+doesn't even separate hands in the protection menu
+
+Bip01_L_Hand
+
+BodyLocation = HandPlateRight,
+BloodLocation = Hands,
+
+media/lua/shared/NPCs/ExtraBodyLocations.lua
+local group = BodyLocations.getGroup("Human")
+group:getOrCreateLocation("HandPlateLeft")
+group:getOrCreateLocation("HandPlateRight")
+---------------------------------------------------------------------
+
 Sadge GUID - 0d6777bd-aed1-4179-9309-4608fa4a933a
 Madge GUID - 3b9cd08d-7547-4f6b-9d0a-8668d7b6c9ea
 Kooky GUID - fae9ab18-d450-4623-b2fa-eb8c0b10ea1a
 
 TO RUN LUA ON GITBASH: winpty lua test.lua
+
+---------------------------------------------------------------------
 
 --REPAIRING CLOTHING IS BASED ON IF GIVEN FABRIC:TYPE....in theory should be done automatically.
 
