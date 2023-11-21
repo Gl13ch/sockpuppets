@@ -2,18 +2,18 @@ VERSION = 1,
 
 option SockPuppets.MinTalkTimer
 {
-    type = integer
-    min = 1
-    default = 20
-    max = 5000
-    page = SockPuppets
+    type = integer,
+    min = 1,
+    default = 20,
+    max = 5000,
+    page = SockPuppets,
 }
 
 option SockPuppets.MaxTalkTimer
 {
-    type = integer
-    min = 10
-    default = 300
-    max = 20000
-    page = SockPuppets
+    type = integer,
+    min = 10,
+    default = 300,
+    max = 20000,
+    page = SockPuppets,
 }
